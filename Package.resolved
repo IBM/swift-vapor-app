@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "AnyCodable",
+        "repositoryURL": "https://github.com/Flight-School/AnyCodable",
+        "state": {
+          "branch": null,
+          "revision": "69261f239f0fffaf51495dadc4f8483fbfe97025",
+          "version": "0.6.1"
+        }
+      },
+      {
         "package": "async-http-client",
         "repositoryURL": "https://github.com/swift-server/async-http-client.git",
         "state": {
@@ -26,15 +35,6 @@
           "branch": null,
           "revision": "cfe8bcd58f74ffecb4f536d8237de146b634ecd3",
           "version": "4.2.6"
-        }
-      },
-      {
-        "package": "FineJSON",
-        "repositoryURL": "https://github.com/omochi/FineJSON.git",
-        "state": {
-          "branch": null,
-          "revision": "05101709243cb66d80c92e645210a3b80cf4e17f",
-          "version": "1.14.0"
         }
       },
       {
@@ -65,48 +65,12 @@
         }
       },
       {
-        "package": "OpenAPIKit",
-        "repositoryURL": "https://github.com/mattpolzin/OpenAPIKit.git",
-        "state": {
-          "branch": null,
-          "revision": "4986552e76c331a99770428bd2be77ad76068c08",
-          "version": "2.4.0"
-        }
-      },
-      {
-        "package": "OpenAPIReflection",
-        "repositoryURL": "https://github.com/mattpolzin/OpenAPIReflection.git",
-        "state": {
-          "branch": null,
-          "revision": "2747214f17d17d4662c03d9cbe85e5e3307285ea",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "RichJSONParser",
-        "repositoryURL": "https://github.com/omochi/RichJSONParser.git",
-        "state": {
-          "branch": null,
-          "revision": "263e2ecfe88d0500fa99e4cbc8c948529d335534",
-          "version": "3.0.0"
-        }
-      },
-      {
         "package": "routing-kit",
         "repositoryURL": "https://github.com/vapor/routing-kit.git",
         "state": {
           "branch": null,
           "revision": "a0801a36a6ad501d5ad6285cbcd4774de6b0a734",
           "version": "4.3.0"
-        }
-      },
-      {
-        "package": "Sampleable",
-        "repositoryURL": "https://github.com/mattpolzin/Sampleable.git",
-        "state": {
-          "branch": null,
-          "revision": "df44bf1a860481109dcf455e3c6daf0a0f1bc259",
-          "version": "2.1.0"
         }
       },
       {
@@ -191,6 +155,15 @@
         }
       },
       {
+        "package": "Swiftgger",
+        "repositoryURL": "https://github.com/mczachurski/Swiftgger.git",
+        "state": {
+          "branch": null,
+          "revision": "25d9ea884067764ab314cd3bf7e0ca19867b3f45",
+          "version": "1.5.0"
+        }
+      },
+      {
         "package": "vapor",
         "repositoryURL": "https://github.com/vapor/vapor",
         "state": {
@@ -200,39 +173,12 @@
         }
       },
       {
-        "package": "VaporOpenAPI",
-        "repositoryURL": "https://github.com/mattpolzin/VaporOpenAPI.git",
-        "state": {
-          "branch": null,
-          "revision": "b9ce1c3f983216e6ba4b3f22ee23678d984d5348",
-          "version": "0.0.14"
-        }
-      },
-      {
-        "package": "VaporTypedRoutes",
-        "repositoryURL": "https://github.com/mattpolzin/VaporTypedRoutes.git",
-        "state": {
-          "branch": null,
-          "revision": "e51d8f49aa4a262ca76dc152a8f8be0f1060f3aa",
-          "version": "0.7.0"
-        }
-      },
-      {
         "package": "websocket-kit",
         "repositoryURL": "https://github.com/vapor/websocket-kit.git",
         "state": {
           "branch": null,
           "revision": "a2d26b3de8b3be292f3208d1c74024f76ac503da",
           "version": "2.1.3"
-        }
-      },
-      {
-        "package": "Yams",
-        "repositoryURL": "https://github.com/jpsim/Yams.git",
-        "state": {
-          "branch": null,
-          "revision": "9ff1cc9327586db4e0c8f46f064b6a82ec1566fa",
-          "version": "4.0.6"
         }
       }
     ]

@@ -33,7 +33,6 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 ### Deploying to IBM Cloud
 
 <p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/swift-kitura-app">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>
@@ -48,7 +47,7 @@ To get started building this application locally, you can either run the applica
 
 #### Native Application Development
 
-- On Linux, install the [Swift toolchain](https://swift.org/) version _v5.1_.
+- On Linux, install the [Swift toolchain](https://swift.org/) version _v5.2_.
 - On macOS, install [Xcode](https://developer.apple.com/download) _v11+_
 
 In the root of this project, first build the application using `swift build`. `swift run` will launch the application and render it at `http://localhost:8080`.
@@ -78,7 +77,7 @@ ibmcloud dev run
 This will launch your application locally. When you are ready to deploy to IBM Cloud on Cloud Foundry or Kubernetes, run one of the commands:
 
 ```bash
-ibmcloud dev deploy -t buildpack // to Cloud Foundry
+ibmcloud dev deploy -t buildpack // to Code Engine
 ibmcloud dev deploy -t container // to K8s cluster
 ```
 
@@ -91,8 +90,7 @@ ibmcloud dev debug
 
 ## Next Steps
 * Learn more about augmenting your Swift applications on IBM Cloud with the [Swift Programming Guide](https://cloud.ibm.com/docs/swift?topic=swift-getting-started).
-* Explore [Vapor.codes](https://vapor.codes/) for more resources about the Kitura framework.
-* Join the [Swift@IBM slack](http://swift-at-ibm-slack.mybluemix.net/) to get help with your projects.
+* Explore [Vapor.codes](https://vapor.codes/) for more resources about the Vapor framework.
 * Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
 
 ## License

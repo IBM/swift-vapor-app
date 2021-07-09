@@ -10,8 +10,7 @@ let package = Package(
         // 💧 A server-side Swift web framework.
         .package(url: "https://github.com/vapor/vapor", from: "4.32.0"),
         .package(url: "https://github.com/vapor/leaf", .exact("4.0.0-tau.1")),
-        .package(url: "https://github.com/mattpolzin/VaporOpenAPI.git", .exact("0.0.14")),
-        .package(url: "https://github.com/jpsim/Yams.git", from: "4.0.0"),
+        .package(url: "https://github.com/mczachurski/Swiftgger.git", from: "1.4.0")
     ],
     targets: [
         .target(
@@ -19,8 +18,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Leaf", package: "leaf"),
                 .product(name: "Vapor", package: "vapor"),
-                "VaporOpenAPI",
-                "Yams",
+                "Swiftgger"
             ],
             swiftSettings: [
                 // Enable better optimizations when building in Release configuration. Despite the use of
