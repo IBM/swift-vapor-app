@@ -28,44 +28,46 @@ In this sample application, you will create a basic web application using [Vapor
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/swift-vapor-app) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/swift-vapor-app) or [build it locally](#building-locally) by cloning this repo first. After your app is live, you can access the `/health` endpoint to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
 <p align="center">
+    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/swift-vapor-app">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>
 
-Click **Deploy to IBM Cloud** to deploy this same application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain. You can deploy your app to Code Engine, a Kubernetes cluster, or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
+Click **Deploy to IBM Cloud** to deploy this application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain. You can deploy your app to Code Engine, a Kubernetes cluster, or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
 
-[IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud.
+[IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provide toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud.
 
-### Building Locally
+### Building locally
 
-To get started building this application locally, you can either run the application natively or use the [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) for containerization and easy deployment to IBM Cloud.
+To get started building this application locally, you can either run the application natively or use the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) for containerization and easy deployment to IBM Cloud.
 
-#### Native Application Development
+#### Native application development
 
 - On Linux, install the [Swift toolchain](https://swift.org/) version _v5.2_.
 - On macOS, install [Xcode](https://developer.apple.com/download) _v11+_
 
-In the root of this project, first build the application using `swift build`. `swift run` will launch the application and render it at `http://localhost:8080`.
+In the root of this project, first build the application using `swift build`. `swift run` launches the application and renders it at `http://localhost:8080`.
 
-#### IBM Cloud Developer Tools
+#### IBM Cloud CLI
 
-Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) on your machine by running the following command:
+Install the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) locally by running the following command:
+
 ```
 curl -sL https://ibm.biz/idt-installer | bash
 ```
 
-Create an application on IBM Cloud by running:
+Create an application on IBM Cloud by running the following command:
 
 ```bash
 ibmcloud dev create
 ```
 
-This will create and download a starter application with the necessary files needed for local development and deployment.
+A starter application is downloaded and created with the files that are needed for local development and deployment.
 
 Your application will be compiled with Docker containers. To compile and run your app, run:
 
@@ -74,7 +76,7 @@ ibmcloud dev build
 ibmcloud dev run
 ```
 
-This will launch your application locally. When you are ready to deploy to IBM Cloud on Cloud Foundry or Kubernetes, run one of the commands:
+Your application is launched locally. When you are ready to deploy to IBM Cloud on Cloud Foundry or Kubernetes, run one of the following commands:
 
 ```bash
 ibmcloud dev deploy -t buildpack // to Cloud Foundry
@@ -88,7 +90,7 @@ ibmcloud dev build --debug
 ibmcloud dev debug
 ```
 
-## Next Steps
+## Next steps
 * Learn more about augmenting your Swift applications on IBM Cloud with the [Swift Programming Guide](https://cloud.ibm.com/docs/swift?topic=swift-getting-started).
 * Explore [Vapor.codes](https://vapor.codes/) for more resources about the Vapor framework.
 * Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
