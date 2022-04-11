@@ -9,42 +9,13 @@ jobs:
       fail-fast: false
       matrix:
         image:
-          - swift:5.2-focal
           - swift:5.3-focal
           - swift:5.4-focal
-          - swift:5.5-focal
     runs-on: ubuntu-latest
     container: ${{ matrix.image }}
     steps:
       - name: Check out Vapor
         uses: actions/checkout@v2
-      - name: Run main tests with Thread Sanitizer
+      - name: Run main tests
         run: swift test --enable-test-discovery
-      - name: Run async tests without Thread Sanitizer
-        # TSAN and async don't play nice at the moment
-        run: swift test --enable-test-discovery
-    
-  test-vapor-macos:
-    strategy:
-      fail-fast: false
-      matrix:
-        xcode:
-          - latest
-          - latest-stable
-    runs-on: macos-12
-    steps: 
-      - name: Select toolchain
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: ${{ matrix.xcode }}
-      - name: Check out Vapor
-        uses: actions/checkout@v2
-      - name: Run main tests with Thread Sanitizer
-        run: |
-          swift test --filter '^VaporTests' --sanitize=thread -Xlinker -rpath \
-                -Xlinker $(xcode-select -p)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx
-      - name: Run async tests without Thread Sanitizer
-        # TSAN and async don't play nice at the moment
-        run: |
-          swift test --filter '^AsyncTests' -Xlinker -rpath \
-                -Xlinker $(xcode-select -p)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx
+ 
