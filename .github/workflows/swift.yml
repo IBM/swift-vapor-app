@@ -23,7 +23,27 @@ jobs:
       run: swift build -v
     - name: Run tests
       run: swift test -v
-      
+  
+  test-vapor-linux:
+    strategy:
+      fail-fast: false
+      matrix:
+        image:
+          - swift:5.2-focal
+          - swift:5.3-focal
+          - swift:5.4-focal
+          - swift:5.5-focal
+    runs-on: ubuntu-latest
+    container: ${{ matrix.image }}
+    steps:
+      - name: Check out Vapor
+        uses: actions/checkout@v2
+      - name: Run main tests with Thread Sanitizer
+        run: swift test --enable-test-discovery --filter '^VaporTests' --sanitize=thread
+      - name: Run async tests without Thread Sanitizer
+        # TSAN and async don't play nice at the moment
+        run: swift test --enable-test-discovery --filter '^AsyncTests'
+    
   test-vapor-macos:
     strategy:
       fail-fast: false
