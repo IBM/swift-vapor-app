@@ -3,26 +3,6 @@ name: Swift
 on: [push]
 
 jobs:
-  test-original:
-
-    runs-on: macos-11
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install swiftenv
-      run: |-
-        brew install kylef/formulae/swiftenv
-        echo 'if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi' >> ~/.bash_profile
-    - name: Install Swift
-      run: |-
-        if ! (swiftenv versions | grep "*"); then
-          echo "Swift version not found. Installing..."
-          swiftenv install
-        fi
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
   
   test-vapor-linux:
     strategy:
@@ -39,10 +19,7 @@ jobs:
       - name: Check out Vapor
         uses: actions/checkout@v2
       - name: Run main tests with Thread Sanitizer
-        run: swift test --enable-test-discovery --filter '^VaporTests' --sanitize=thread
-      - name: Run async tests without Thread Sanitizer
-        # TSAN and async don't play nice at the moment
-        run: swift test --enable-test-discovery --filter '^AsyncTests'
+        run: swift test -v
     
   test-vapor-macos:
     strategy:
@@ -51,7 +28,7 @@ jobs:
         xcode:
           - latest
           - latest-stable
-    runs-on: macos-11
+    runs-on: macos-12
     steps: 
       - name: Select toolchain
         uses: maxim-lobanov/setup-xcode@v1
