@@ -19,7 +19,10 @@ jobs:
       - name: Check out Vapor
         uses: actions/checkout@v2
       - name: Run main tests with Thread Sanitizer
-        run: swift build -v; swift test -v
+        run: swift test --enable-test-discovery
+      - name: Run async tests without Thread Sanitizer
+        # TSAN and async don't play nice at the moment
+        run: swift test --enable-test-discovery
     
   test-vapor-macos:
     strategy:
