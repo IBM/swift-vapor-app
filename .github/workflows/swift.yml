@@ -19,7 +19,7 @@ jobs:
       - name: Check out Vapor
         uses: actions/checkout@v2
       - name: Run main tests with Thread Sanitizer
-        run: swift test -v
+        run: swift build -v; swift test -v
     
   test-vapor-macos:
     strategy:
