@@ -56,7 +56,7 @@ RUN BX_DEV_USER=$bx_dev_user
 RUN BX_DEV_USERID=$bx_dev_userid
 
 # Create a new user and group with /app as its home directory
-RUN useradd --user-group --create-home --system --skel /dev/null --home-dir /app $bx_dev_user
+RUN if [ "$bx_dev_user" != root ]; then useradd --user-group --create-home --system --skel /dev/null --home-dir /app $bx_dev_user; fi
 
 # Switch to the new home directory
 WORKDIR /app
