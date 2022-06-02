@@ -32,8 +32,6 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
 
 ### Deploying to IBM Cloud
 
-**Deprecated**: IBM® Cloud Foundry is deprecated. For more information, see [Deprecation of IBM Cloud Foundry](http://ibm.biz/ibmcf-announce).
-
 <p align="center">
     <a href="https://cloud.ibm.com/developer/appservice/starter-kits/swift-vapor-app">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
@@ -81,7 +79,6 @@ ibmcloud dev run
 Your application is launched locally. When you are ready to deploy to IBM Cloud on Cloud Foundry or Kubernetes, run one of the following commands:
 
 ```bash
-ibmcloud dev deploy -t buildpack // to Cloud Foundry
 ibmcloud dev deploy -t container // to K8s cluster
 ```
 
