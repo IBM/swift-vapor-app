@@ -76,10 +76,9 @@ ibmcloud dev build
 ibmcloud dev run
 ```
 
-Your application is launched locally. When you are ready to deploy to IBM Cloud on Cloud Foundry or Kubernetes, run one of the following commands:
+Your application is launched locally. When you are ready to deploy to IBM Cloud on Kubernetes, run one of the following commands:
 
 ```bash
-ibmcloud dev deploy -t buildpack // to Cloud Foundry
 ibmcloud dev deploy -t container // to K8s cluster
 ```
 
