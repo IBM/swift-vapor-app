@@ -28,12 +28,12 @@ In this sample application, you will create a basic web application using [Vapor
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/swift-vapor-app) or [build it locally](#building-locally) by cloning this repo first. After your app is live, you can access the `/health` endpoint to build out your cloud native application.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=10eeb242-60e1-3bc8-9970-f19a2bf4fce9) or [build it locally](#building-locally) by cloning this repo first. After your app is live, you can access the `/health` endpoint to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
 <p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/starter-kits/swift-vapor-app">
+    <a href="https://cloud.ibm.com/developer/appservice/create-app?starterKit=10eeb242-60e1-3bc8-9970-f19a2bf4fce9">
     <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
     </a>
 </p>
