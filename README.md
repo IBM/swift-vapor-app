@@ -1,3 +1,6 @@
+# WARNING: This repository is no longer maintained :warning:
+
+> This repository will not be updated. The repository will be kept available in read-only mode.
 <p align="center">
     <a href="https://cloud.ibm.com">
         <img src="https://cloud.ibm.com/media/docs/developer-appservice/resources/ibm-cloud.svg" height="100" alt="IBM Cloud">
@@ -28,17 +31,7 @@ In this sample application, you will create a basic web application using [Vapor
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=10eeb242-60e1-3bc8-9970-f19a2bf4fce9) or [build it locally](#building-locally) by cloning this repo first. After your app is live, you can access the `/health` endpoint to build out your cloud native application.
-
 ### Deploying to IBM Cloud
-
-<p align="center">
-    <a href="https://cloud.ibm.com/developer/appservice/create-app?starterKit=10eeb242-60e1-3bc8-9970-f19a2bf4fce9">
-    <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to IBM Cloud">
-    </a>
-</p>
-
-Click **Deploy to IBM Cloud** to deploy this application to IBM Cloud. This option creates a deployment pipeline, complete with a hosted GitLab project and a DevOps toolchain. You can deploy your app to Code Engine, a Kubernetes cluster, or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
 
 [IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provide toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud.
 
@@ -88,11 +81,6 @@ You can build and debug your app locally with:
 ibmcloud dev build --debug
 ibmcloud dev debug
 ```
-
-## Next steps
-* Learn more about augmenting your Swift applications on IBM Cloud with the [Swift Programming Guide](https://cloud.ibm.com/docs/swift?topic=swift-getting-started).
-* Explore [Vapor.codes](https://vapor.codes/) for more resources about the Vapor framework.
-* Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
 
 ## License
 
